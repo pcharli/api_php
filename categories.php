@@ -101,11 +101,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'PUT') :
         $connect->query($sql);
         echo $connect->error;
         $response['response'] = "Edit une catégorie avec id " . $_GET['id_categories'];
+       /*
         $response['new_data'] = $arrayPOST;
         unset($response['new_data']['token']);
+        */
     else :
         //si il manque le 'label"
-        $response['response'] = "Il manque des données";
+        $response['response'] = "Il manque le label";
         $response['code'] = 500;
     endif;
 endif; //END PUT
