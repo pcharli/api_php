@@ -45,6 +45,9 @@ else:
         $response['response'] = "OK connecté";
         $response['token'] = $_SESSION['token'];
 
+        //$response['session'] = $_SESSION['user'];
+        //exit;
+
     endif;
 endif;
 
