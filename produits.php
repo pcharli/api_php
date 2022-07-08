@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') :
         $sql = sprintf("INSERT INTO produits SET label='%s', prix='%s, id_categories=%s'",
             strip_tags(addslashes($objectPOST->label)), //lire une propriété d'un objet PHP
             strip_tags($objectPOST->prix),
-            ($objectPOST->id_categories != 0) ? strip_tags($objectPOST->id_categories) : 'NULL',// si l'id_categories est différent de 0, on l'utilise, sinon retourne NULL, d'où l'usage du %s pour l'id_categories dans $sql
+            ($objectPOST->id_categories != 0) ? strip_tags($objectPOST->id_categories) : 'NULL'// si l'id_categories est différent de 0, on l'utilise, sinon retourne NULL, d'où l'usage du %s pour l'id_categories dans $sql
         );
         /*
         $sql = sprintf("INSERT INTO personnes SET nom='%s', prenom='%s'",

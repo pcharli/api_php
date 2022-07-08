@@ -3,7 +3,7 @@ include 'config.php';
 include 'headers.php';
 session_start();
 
-$response['script'] = 'auth_api.php';
+$response['script'] = 'test.php';
 
 
 if ( isset($_GET['delog']) ) :

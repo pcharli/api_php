@@ -12,4 +12,6 @@ RewriteRule produits$ produits.php [L]
 RewriteRule produits/([0-9]+)$ produits.php?id_produits=$1 [L]
 RewriteRule categories$ categories.php [L]
 RewriteRule categories/([0-9]+)$ categories.php?id_categories=$1 [L]
+RewriteRule test$ test.php [L]
+RewriteRule testdeconnexion$ test.php?delog [L]
 
